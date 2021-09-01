@@ -1,0 +1,164 @@
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+.img-fluid{
+    width: 50%;
+    height: 35vh;
+    display: block;
+    margin:  auto;
+}
+
+nav ul{
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+   
+}
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    margin: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-img{
+    margin: 20px 20px;
+}
+.image{
+    margin: 20px;
+}
+p{
+    color: #3a3b3c;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+}
+h2{
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+.footer{
+    background-color: black;
+    padding: 60px;
+    margin-top: 20px;
+    color:#fff;
+    background-size: cover;
+    object-fit: cover;
+}
+.mkg{
+display:flex;
+margin:0 auto;
+}
+.details{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+}
+
+.end{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.img{
+    margin-top: 10px;
+}
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.thumb {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+@media only screen and (max-width: 768px) {
+
+  .img-fluid2{
+      width: 99%;
+      margin-top: 20px;
+      height: 70%;
+  }
+   p{
+       width: 98%;
+       margin-top: 10px;
+   }
+   .img{
+    width: 100%;
+    height:100%;
+ }
+ .nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav ul a{
+    font-size: 12px;
+    margin: 8px;
+    
+}
+ .img-fluid{
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    height: 30%;
+}
+ h2{
+     margin-top: 10px;
+   
+ }
+ 
+ .details{
+    font-size: 14px;
+}
+.logo{
+    font-size: 12px;
+}
+.end{
+    font-size: 14px;
+}
+.img-fluid{
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    
+}
+     
+}

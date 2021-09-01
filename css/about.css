@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.nav-section{
+    display: flex;
+    
+}
+
+.img{
+
+    height: 60vh;
+    width: 100%;
+}
+
+
+
+.img-fluid{
+    width: 50%;
+    height: 35vh;
+    display:block;
+    margin: 0 auto;
+}
+
+nav ul{
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+   
+}
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    margin:45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links{
+    font-family: sans-serif;
+    color: rgb(224, 72, 72);
+    text-decoration: none;
+    font-weight: lighter;
+    padding: 10% 20px;
+    font-size: 30px;
+}
+
+.hyperlink{
+    text-decoration: none;
+}
+
+.img-section{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.interior{
+    width: 100%;
+    margin: 20px 7%;
+}
+
+.interior-img{
+    width: 100%;
+}
+
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.royal-img{
+    width: 50%;
+    margin: 50px;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+.intro-graphic{
+    display: flex;
+    justify-content: center;
+}
+
+.graphic{
+    width: 85%;
+    height: 80vh;
+}
+
+
+.footer{
+    background-color: black;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.details{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+}
+
+.end{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
+
+    .img-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .royal-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .image{
+        width: 100vh;
+    }
+
+    .footer{
+        width: 85%;
+    }
+
+    .img-fluid{
+        width: 100%;
+    }
+}

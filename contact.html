@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/64d58efce2.js"crossorigin="anonymous">
+        </script>
+         <script
+         src="https://kit.fontawesome.com/64d58efce2.js"
+         crossorigin="anonymous"
+       ></script>
+        <style>
+ 
+.call{
+    margin: -21% 68%;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.contact{
+    font-family:"Brandson Grotesque", sans-serif;;
+    color: #adb5bd;
+    text-align:center;
+    margin: 2%;
+}
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3%;
+}
+.page{
+    background-color: #ebecfd;
+    width: 350px;
+    height: 160px;
+     
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    border-radius: 250px;
+}
+ion-icon{
+    font-size: 40px;
+}
+.ion{
+    background-color: #ebecfd;
+    width: 350px;
+    height: 160px;
+   border-radius: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+} 
+.ion2{
+    background-color: #ebecfd;
+    width: 350px;
+    height: 160px;
+     border-radius: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+     
+}
+
+
+.main{
+    margin: -20% 20%;
+}
+.loo{
+  margin: -1%;
+}
+       
+       .ak{
+         margin: -10 3%;
+       }  
+       body {
+  font-family: "Lato", sans-serif;
+  color: black;
+  margin: 0;
+}
+
+ .all{
+   margin: -1%;
+ }
+ 
+
+
+ .img-fluid{
+    width: 50%;
+    height: 35vh;
+    display:block;
+    margin: 0 auto;
+}
+
+nav ul{
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+   
+}
+ 
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    margin:45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img{
+  margin-top: 30px;
+} 
+
+.grid {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  border-radius: 3px;
+  text-align: center;
+}
+
+.grid > article:hover{
+  transition: transform .1s ease-out;
+  transform: translateY(5px);
+}
+
+.grid > article img {
+  width: 100%;
+}
+
+
+.text {
+  padding: 0 20px 20px;
+}
+
+.text > h3{
+  text-transform: uppercase;
+}
+
+.text > button {
+  background: linear-gradient(to right, #f030a7, #f0308d, #f03061);
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  text-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 768px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px){
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+
+  .grid > article{
+    text-align: center;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #fafafa;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 820px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form {
+  background-color: #1abc9c;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  background: linear-gradient(135deg, transparent 20%, #149279);
+  position: absolute;
+}
+
+.circle.one {
+  width: 130px;
+  height: 130px;
+  top: 130px;
+  right: -40px;
+}
+
+.circle.two {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  right: 30px;
+}
+
+.contact-form:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #1abc9c;
+  transform: rotate(45deg);
+  top: 50px;
+  left: -13px;
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+.input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #fafafa;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 150px;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #fafafa;
+  font-size: 0.9rem;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
+}
+
+.btn {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #1abc9c;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.input-container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.input-container span:before,
+.input-container span:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 5px;
+  background-color: #1abc9c;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container span:before {
+  left: 50%;
+}
+
+.input-container span:after {
+  right: 50%;
+}
+
+.input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 0.8rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}
+
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+.contact-info .title {
+  color: #1abc9c;
+}
+
+.text {
+  color: #333;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.information {
+  display: flex;
+  color: #555;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.icon {
+  width: 28px;
+  margin-right: 0.7rem;
+}
+
+.social-media {
+  padding: 2rem 0 0 0;
+}
+
+.social-media p {
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #1abc9c, #149279);
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.05);
+}
+
+.contact-info:before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 100px;
+  border: 22px solid #1abc9c;
+  border-radius: 50%;
+  bottom: -77px;
+  right: 50px;
+  opacity: 0.3;
+}
+
+.big-circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #1cd4af, #159b80);
+  bottom: 50%;
+  right: 50%;
+  transform: translate(-40%, 38%);
+}
+
+.big-circle:after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  top: calc(50% - 180px);
+  left: calc(50% - 180px);
+}
+
+.square {
+  position: absolute;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(181%, 11%);
+  opacity: 0.2;
+}
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact-form:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .square {
+    transform: translate(140%, 43%);
+    height: 350px;
+  }
+
+  .big-circle {
+    bottom: 75%;
+    transform: scale(0.9) translate(-40%, 30%);
+    right: 50%;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .social-media {
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+ion-icon{
+color:red
+}
+h1{
+color:#2E88B6
+}
+.contact{
+color:gray
+}
+ 
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.thumb {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .contact-info:before {
+    display: none;
+  }
+
+  .square,
+  .big-circle {
+    display: none;
+  }
+
+  form,
+  .contact-info {
+    padding: 1.7rem 1.6rem;
+  }
+
+  .text,
+  .information,
+  .social-media p {
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .icon {
+    width: 23px;
+  }
+
+  .input {
+    padding: 0.45rem 1.2rem;
+  }
+
+  .btn {
+    padding: 0.45rem 1.2rem;
+  }
+}
+.note{
+  padding-left: 15px;
+  font-size: 18px;
+}
+.footer{
+    background-color: black;
+    padding: 60px;
+    margin-top: 20px;
+    color:#fff;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.details{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+}
+
+.end{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+} 
+@media only screen and (max-width: 768px) {
+  .img-fluid{
+        display: flex;
+        margin: 0 auto;
+        width: 70%;
+        height: 30%;
+    }
+    .nav ul a{
+        font-size: 12px;
+        margin: 8px;
+        padding-left: 10px;
+    }
+  
+    .img{
+      width: 100%;
+      height: 70%;
+    }
+    .contact{
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+    }
+    .heading h1{
+      font-size: 22px;
+    }
+   .note{
+     font-size: 15px;
+   }
+   .h5{
+font-family: Arial, Helvetica, sans-serif;
+   }
+   .details{
+        font-size: 14px;
+    }
+    .logo{
+        font-size: 12px;
+      
+    }
+    .end{
+        font-size: 14px;
+      
+    }
+}
+</style>
+</head>
+<body>
+
+       </style>
+       
+    </head>
+    <body> 
+      <div class="loader">
+        <img src="./img/Loading-Animation.gif" alt="Loading..." />
+    </div>
+     
+        <img class="img-fluid" src="./img/154ea65c-1d92-4587-9e32-16619cb35a85.jpg">
+    </div>
+    <div class="nav">
+             <ul>
+             <a href="who.html"  > Who we are  </a> </li>
+              <a href="./kit.html"  > Kitchens </a> </li>
+             <a href="int.html"  > Interior work / Services  </a> </li>
+               <a href="contact.html"  > Enquiry </a> </li>
+             </ul>
+    
+         </div>
+         <img class="img" src="./img/4b7269f9-3ece-4251-9328-7b437c9fd13a.jpg" width="100%" height="450px">
+        <div class="contact">
+            "THE ESSENCE OF <br>INTRIOR DESIGN WILL ALWAYS<br> BE ABOUT PEOPLE AND HOW<br> THEY LIVE. IT IS ABOUT THE<br> REALITIES OF WHAT MAKES FOR<br> ANATTRACTIVE, CIVILIZED,<br> MEANINGFUL ENVIROMENT,<br> NOT ABOUT FASHION OR<br> WHAT'S IN OR WHAT'S OUT.<br> THIS IS NOT AN EASY JOB"
+        </div>
+        <div class="heading">
+        <h1>
+        Let's get in touch
+        </h1>
+    </div>
+    <main class="grid">
+      <article>
+        <img src="./img/images%20(15).jpg" alt="Sample photo">
+        <div class="text">
+          <h3>Address</h3>
+<h6><ion-icon name="pin"></ion-icon></h6>
+          <p> <h5>  Bldg.No.183, kannamavar Nagar No.2, Vikhroli(E). Mumbai-83<br> Om SaiKrupa Soc.Plot No.34,C/12, Savarkar Nagar, Thane(W)-400 606 </h5></p>
+         
+        </div>
+      </article>
+      <article>
+        <img src="./img/FeatureImage_what_is_hd_voice_calling.jpg" alt="Sample photo">
+        <div class="text">
+          <h3>Call Us</h3>
+<ion-icon name="call"></ion-icon>
+          <p> <h4>+91-8652004865</h4> </p>
+          
+        </div>
+      </article>
+      <article>
+        <img src="./img/1.jpg" alt="Sample photo">
+        <div class="text">
+          <h3>Mail Us</h3>
+<ion-icon name="mail"></ion-icon>
+          <p> <h4> royaleinterior.design@gmail.com </h4></p>
+         
+        </div>
+      </article>
+    </main>
+          <div class="container">
+            <span class="big-circle"></span>
+            <img src="img/shape.png" class="square" alt="" />
+            <div class="form">
+              <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                  <i class="fas fa-search-location"></i>Bldg.No.183, kannamavar Nagar No.2, Vikhroli (E). Mumbai-83<br> Om SaiKrupa Soc.Plot No 34,C/12, Savarkar Nagar, Thane(W)-400 606 
+                </p>
+      
+                <div class="info">
+                  <div class="information">
+                    <img src="img/location.png" class="icon" alt="" />
+                    <p></p>
+                  </div>
+                  <div class="information">
+                    <img src="img/email.png" class="icon" alt="" />
+                    <i class="fas fa-envelope"></i> <p> royaleinterior.design@gmail.com  </p>
+                  </div>
+                  <div class="information">
+                    <img src="img/phone.png" class="icon" alt="" />
+                    <i class="fas fa-phone-square-alt"></i> <p> +91-8652004865</p>
+                  </div>
+                </div>
+      
+                <div class="social-media">
+                  <p>Connect with us :</p>
+                  <div class="social-icons">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                   
+                  </div>
+                </div>
+              </div>
+      
+              <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+      
+                <form action="https://formspree.io/f/xnqllneb" method="POST">
+                  <h3 class="title">Contact us</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="input" id="Name" placeholder="Name"/>
+                   
+                    <span>Name</span>
+                    </div>
+                    <div class="input-container">
+                    <input type="email" name="email" class="input" id="Sender" placeholder="Email"/>
+                   
+                    <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                    <input type="tel" name="mobile" class="input" id="Subject" placeholder="phone"/>
+                  
+                    <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                    <textarea name="message" class="input" id="Message" placeholder="Message"></textarea>
+                    
+                    <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+              </div>
+            </div>
+          </div>  
+         
+          <script src="app.js"></script>
+          <div class="note"> 
+      <p>Note: If you have any query you can directly contact with us with Gmail. If you like this interior design you can contact eith us with Gmail . Thank you For Visiting</p>
+    </div>
+    <footer class="footer">
+      <div>
+         <h2 class="details">Call Us:8652004865 </h2>
+         <h2 class="details">Mail Us:royaleinterior.design@gmail.com</h2>Built and Designed by Ayush Khetle<br>
+         <ion-icon class="logo" name="logo-facebook"></ion-icon>
+         <ion-icon class="logo" name="logo-whatsapp"> <h4 class="end"> </h4></ion-icon>  
+        
+      </div>
+      <script> 
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden"; // class "loader hidden"
+    });
+  </script>
+      </body>
+        </html>
+       

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <style>
+      .img-fluid{
+    width: 50%;
+    height: 35vh;
+    display:block;
+    margin: 0 auto;
+}
+
+nav ul{
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+   
+}
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    margin:45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+}
+.fluid{
+    display:flex;
+    flex-direction:row ;
+}
+
+.img2{
+  width: 45%;
+  margin: 10px 10px;  
+}
+.fluid2{
+    display:flex;
+    flex-direction:row;
+}
+.img6{
+  width: 45%;
+  margin: 10px 10px;  
+}
+.fluid3{
+    display:flex;
+    flex-direction:row;
+}
+.img10{
+  width: 45%;
+  margin: 10px 10px;  
+}
+.footer{
+    background-color: black;
+    padding: 60px;
+    margin-top: 20px;
+    color:#fff;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.details{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+}
+
+.end{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.thumb {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+@media only screen and (max-width: 768px) {
+
+    .fluid,.fluid2,.fluid3{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 30%;
+        }
+
+
+    .img2,.img6,.img10{
+        width: 110%;
+    }
+ 
+
+    .nav-section{
+        display: flex;
+        justify-content: left;
+
+    }
+    .img-fluid{
+        display: flex;
+        margin: 0 auto;
+        width: 70%;
+        height: 30%;
+    }
+
+    
+
+  
+    .nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav ul a{
+        font-size: 15px;
+        margin: 8px;
+        padding-left: 0px;
+    }
+    .img{
+       width: 100%;
+       height: 60%;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .details{
+        font-size: 14px;
+    }
+    .logo{
+        font-size: 12px;
+    }
+    .end{
+        font-size: 14px;
+    }
+    * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+}
+
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <img src="./img/Loading-Animation.gif" alt="Loading..." />
+</div>
+    <div class="nav-section">
+        
+        <img class="img-fluid" src=" ./img/154ea65c-1d92-4587-9e32-16619cb35a85.jpg">
+    </div>
+    <div class="nav">
+             <ul>
+             <a href="who.html"  > Who we are  </a> </li>
+              <a href="./kit.html"  > Kitchens </a> </li>
+             <a href="int.html"  > Interior work / Services  </a> </li>
+               <a href="contact.html"  > Enquiry </a> </li>
+             </ul>
+    
+         </div>
+         <div class="iiiS"> 
+         <img class="img" src="./img/4b7269f9-3ece-4251-9328-7b437c9fd13a.jpg" width="100%" height="450px"> 
+        </div> 
+         <h2> Acrylic Kitchens</h2>
+         <div class="fluid">  
+         <img class="img2" src="./img/8d682952-1e0d-48fa-ad28-0b1c164b70fb.jpg" width="400px" height="500px">
+         <img class="img2" src="./img/7952dc7b-d23f-4e9a-83bb-f9f3a0f595b7 (1).jpg"  width="400px" height="500px">
+         </div>
+         <div class="fluid">  
+         <img class="img2" src="./img/c72f024c-edc5-4953-b2de-cdd232e7b65a.jpg" width="400px" height="500px">
+         <img class="img2" src="./img/9fbb2039-dbfa-4b8b-9a9a-c4dbadca0810.jpg" width="400px" height="500px">
+            </div>
+         <div class="fluid">
+         
+         </div>
+         <h2> Laminate Kitchens</h2>
+         <div class="fluid2">
+            <img class="img6" src="./img/modular-kitchen-laminate-500x500.jpg">
+            <img class="img6" src="./img/Laminate-Sheets-Ideal-for-the-Kitchen.png">
+            </div>
+            <div class="fluid2"> 
+            <img class="img6" src="./img/modular+vs+carperntary+kitchen.jpg">
+            <img class="img6" src="./img/modular-kitchen-rs-1800-per-sq-feet-500x500.jpg">
+        </div>
+        <h2> PU Finish Kitchens</h2>
+        <div class="fluid3">
+          <img class="img10" src="./img/95fe50ace83bc630381c1ce14635427a.jpg" >
+          <img class="img10" src="./img/download (5).jpg" >
+        </div>
+        <div class="fluid3">
+          <img class="img10" src="./img/e4da4f0c-35a8-480e-bd00-46809f04d55e.jpg" >
+          <img class="img10" src="./img/laminated-kitchen-500x500.jpg"  >
+        </div>
+        <footer class="footer">
+            <div>
+               <h2 class="details">Call Us:8652004865 </h2>
+               <h2 class="details">Mail Us:royaleinterior.design@gmail.com</h2>
+               &nbsp; &nbsp;<ion-icon class="logo" name="logo-facebook"></ion-icon>
+               <ion-icon class="logo" name="logo-whatsapp"></ion-icon>
+               <h4 class="end">&nbsp;&nbsp; &nbsp;Built and Designed by Ayush Khetle  </h4>
+            </div>
+            </footer>
+<script> 
+              window.addEventListener("load", function () {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden"; // class "loader hidden"
+            });            
+          </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <style> 
+    .img-fluid{
+        width: 50%;
+        height: 35vh;
+        display:block;
+        margin: 0 auto;
+    }
+    
+    nav ul{
+      
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+       
+    }
+     
+    a{
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: black;
+        margin:45px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: brown;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #3a3b3c;
+        width: 98%;
+       
+    }
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .main{
+        margin: 20px;
+    }
+    .footer{
+    background-color: black;
+    padding: 60px;
+    margin-top: 20px;
+    color:#fff;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.details{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+}
+
+.end{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.thumb {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .img-fluid{
+        display: flex;
+        margin: 0 auto;
+        width: 70%;
+        height: 50%;
+    }
+    .nav ul a{
+        font-size: 12px;
+        margin: 8px;
+        padding-left: -1px; 
+    }
+    p{
+        font-size: 20px;
+        width: 98%;
+    }
+    .img{
+        width: 100%;
+        height: 95%;
+    }
+    .details{
+        font-size: 16px;
+    }
+    .logo{
+        font-size: 12px;
+    }
+    .end{
+        font-size: 16px;
+    }
+   
+}
+  
+</style>  
+</head>
+<body>
+    <div class="loader">
+        <img src="./img/Loading-Animation.gif" alt="Loading..." />
+    </div>
+    <div class="nav-section">
+        
+        <img class="img-fluid" src="./img/154ea65c-1d92-4587-9e32-16619cb35a85.jpg">
+    </div>
+    <div class="nav">
+             <ul>
+             <a href="who.html"  > Who we are  </a> </li>
+              <a href="./kit.html"  > Kitchens </a> </li>
+             <a href="int.html"  > Interior work / Services  </a> </li>
+               <a href="contact.html"  > Enquiry </a> </li>
+             </ul>
+    
+         </div>
+         <img class="img" src="./img/4b7269f9-3ece-4251-9328-7b437c9fd13a.jpg" width="100%" height="450px">
+         <div class="main"> 
+         <h2><li>Who we are</h2> </li>
+         <p>Royal interior is bringing a complete range of Kitchens and interior work focussed on Indian requirement of customised interior work . The brand is launched by Royal Funiture which has been involved in the interior field since last 30 years <br> Today Royal Furniture is name to reckon within the Turkey interior solution . Driven by passion and steered with unflinching proffessionalism . The Team has earned laurels by ensuring finest quality standards in each of its services</p>
+         <h2> <li> Mission</li></h2>
+         <p>We will achieve our vision by pursuing cost, quality and customization . Further , we will keep on upgrading our state of the art Indian manufacturing facilities , strengthen ties with suppliers and expand market reach by establishing network of our Firm</p>
+         <h2><li> Vision</li></h2>
+         <p> To be a market leader in modular kitchen and interior design industry by providing exclusive products customized for  Indian requirement and affordable to masses</p>
+         <h2><li> Why Royal Interior</li></h2>
+         <h3>Designed by us , Inspired by you</h3>
+         <p> There are many things that complete you and your home , At Royal Interior , we believe that your home is one of the them . Which is why we design and build home that are inspired by you and powered by your imagination  . Designed by finest interior expert , fabricated by the most system around and making optimum utilization of every space , we at Royal redefine opulence functionality and style. So , rool over and help us making something new for you</p>
+         <h2><li> Perfection at Royal Interior</li></h2>
+         <p> Customized interior for every and space , material , finishes or accessories , Royal Interior offer you a complete solution to do up your interior the way you like and at the budget that suits uou . World class appliances and accessories . Find an immaculate range of kitchen appliances and accessories with great design and super functionality</p>
+         <p> 3D design services . Royal Interior team of expert interior designers , design and re-design interior spaces with the use of sophisticated software and 3D software to give you a complete virtual walk through oy your new house</p>
+         <p> Wide range of modular kitchen displays . Design and decorated by choosing from a wide range of factory finishes and style made of high quality and long lusting materials. </p>
+        </div>
+        <footer class="footer">
+            <div>
+               <h2 class="details">Call Us:8652004865 </h2>
+               <h2 class="details">Mail Us:royaleinterior.design@gmail.com</h2>
+               <ion-icon class="logo" name="logo-facebook"></ion-icon>
+               <ion-icon class="logo" name="logo-whatsapp"></ion-icon>
+               <h4 class="end">Built and Designed by Ayush Khetle  </h4>
+            </div>
+            </footer>
+            <script> 
+                window.addEventListener("load", function () {
+                  const loader = document.querySelector(".loader");
+                  loader.className += " hidden"; // class "loader hidden"
+              });            
+            </script>
+</body>
+</html>
